@@ -62,7 +62,7 @@ body{background-color: rgb(201, 214, 197);}
 .flex-container-body{
     display: flex;
     flex-direction: row;
-    padding-top: 200px;
+    /*padding-top: 200px;*/
 }
 .flex-left{
     width: 50%;
