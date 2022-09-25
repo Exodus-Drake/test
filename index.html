@@ -17,6 +17,9 @@
       $(function(){
       $("#include-base").load("includes/widget_base.html");
       $("#include-featured").load("includes/widget_featured.html");
+      $("#include-audio").load("includes/widget_audio.html");
+      $("#include-friends").load("includes/widget_friends.html");
+      $("#include-webcam").load("includes/widget_webcam.html");
       });
     </script>
     <link rel="stylesheet" href="style.css">
@@ -38,25 +41,22 @@
   <body>
 
     <div class="flex-container-body"><!--Containter of both the left and right flex columns-->
-        <!--Left Column-->
+        <!--[ Left Column ]-->
         <div class="flex-left">
 
-          <div id="include-base"></div>
+          <!--[ Includes ]-->
           <div id="include-featured"></div>
-          {% include widget_featured.html %}
-          {% include widget_audio.html %}
-          {% include widget_base.html %}
-          {% include widget_base.html %}
-
+          <div id="include-audio"></div>
+          <div id="include-base"></div>
+          <div id="include-base"></div>
 
         </div>
-        <!--END-->
-
-        <!--right Column-->
+        <!--[ Right Column ]-->
         <div class="flex-right">
 
-            {% include widget_friends.html %}
-            {% include widget_webcam.html %}
+          <!--[ Includes ]-->
+          <div id="include-friends"></div>
+          <div id="include-webcam"></div>
 
         </div>
         <!--END-->
