@@ -15,6 +15,7 @@
       </script>
     <script>
       $(function(){
+      $("#include-header").load("includes/profile_header.html");
       $("#include-base").load("includes/widget_base.html");
       $("#include-featured").load("includes/widget_featured.html");
       $("#include-audio").load("includes/widget_audio.html");
@@ -32,8 +33,9 @@
 
     <!--</div>-->
     <div class="flex-container-head"><!--Head of the page, fixed position-->
-
-
+      
+      <!--[ Includes ]-->
+      <div id="include-header"></div>
 
     </div>
   </header>
