@@ -23,6 +23,11 @@
       $("#include-webcam").load("includes/widget_webcam.html");
       });
     </script>
+    <script src="https://unpkg.com/@waline/client@v2/dist/waline.js"></script>
+    <link
+    rel="stylesheet"
+    href="https://unpkg.com/@waline/client@v2/dist/waline.css"
+    />
     <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/x-icon" href="assets/favicon/favicon.png">
   </head>
@@ -33,7 +38,7 @@
 
     <!--</div>-->
     <div class="flex-container-head"><!--Head of the page, fixed position-->
-      
+
       <!--[ Includes ]-->
       <div id="include-header"></div>
 
@@ -67,7 +72,13 @@
   </body>
 <!--[ FOOTER ]=========================================================================-->
   <footer>
-    feet, hahahah
+    <div id="waline"></div>
+    <script>
+      Waline.init({
+        el: '#waline',
+        serverURL: 'https://your-domain.vercel.app',
+      });
+    </script>
   </footer>
 <!--=========================================================================-->
 </html>
