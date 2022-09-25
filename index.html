@@ -21,8 +21,10 @@
       $("#include-audio").load("includes/widget_audio.html");
       $("#include-friends").load("includes/widget_friends.html");
       $("#include-webcam").load("includes/widget_webcam.html");
+      $("#include-poll").load("includes/widget_poll.html");
       });
     </script>
+    <link rel="stylesheet" href="https://unpkg.com/easy-embeddable-polls@latest/dist/easyEmbeddablePolls.css">
     <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/x-icon" href="assets/favicon/favicon.png">
   </head>
@@ -47,9 +49,9 @@
         <div class="flex-left">
 
           <!--[ Includes ]-->
-          <div id="include-base"></div>
           <div id="include-featured"></div>
           <div id="include-audio"></div>
+          <div id="include-base"></div>
           <div id="include-base"></div>
           <div id="include-base"></div>
           <div id="include-featured"></div>
@@ -61,11 +63,20 @@
           <!--[ Includes ]-->
           <div id="include-friends"></div>
           <div id="include-webcam"></div>
+          <div id="include-poll"></div>
 
         </div>
         <!--END-->
     </div>
-
+    <script src="https://unpkg.com/vue@latest"></script>
+    <script src="https://unpkg.com/easy-embeddable-polls@latest"></script>
+    <script type="text/javascript">
+      Vue.component('poll', easyEmbeddablePolls.Poll);
+      Vue.component('renderless-poll', easyEmbeddablePolls.RenderlessPoll);
+      new Vue({
+        el: '#poll',
+      });
+    </script>
   </body>
 <!--[ FOOTER ]=========================================================================-->
   <footer>
