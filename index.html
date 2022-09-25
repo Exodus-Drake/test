@@ -15,7 +15,8 @@
       </script>
     <script>
       $(function(){
-      $("#getnav").load("includes/widget_base.html");
+      $("#include-base").load("includes/widget_base.html");
+      $("#include-featured").load("includes/widget_featured.html");
       });
     </script>
     <link rel="stylesheet" href="style.css">
@@ -40,7 +41,8 @@
         <!--Left Column-->
         <div class="flex-left">
 
-          <div id="getnav">f</div>
+          <div id="include-base"></div>
+          <div id="include-featured"></div>
           {% include widget_featured.html %}
           {% include widget_audio.html %}
           {% include widget_base.html %}
