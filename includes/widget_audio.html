@@ -1,0 +1,32 @@
+<div class="flex-container-widget-header"><!--Container for Header bar of Widget-->
+<!--=========================================================================-->
+    <div class="widget-header-new"><!--Content of Header bar-->
+      <img src="assets/emoticons/emoticon001.png" class="fakemoji"><p>Audio</p><!--Icon and Name of widget box-->
+
+    </div>
+
+</div>
+      <div class="flex-container-widget-body"><!--Container for Body of Widget-->
+<!----------------------------------------------------------------------------->
+
+      <div class="widget-audio">
+        <audio controls preload>
+          <source src="assets/audio/CommandofQuiescence.wav" type="audio/wav">
+          <source src="assets/audio/CommandofQuiescence.ogg" type="audio/ogg">
+          Your browser does not support the audio element.
+        </audio>
+      </div>
+
+<!----------------------------------------------------------------------------->
+      </div>
+<!--=========================================================================-->
+
+<!-- WARNING:
+        Chrome based browsers are really janky with how they handle certain
+        elements, audiofiles provided must not contain underscores "_" in
+        the title, else it may fail to work, thanks Google >:(
+
+        Also, trying to auto play the tracks will not work on chrome unless
+        track also has the "muted" element included, again, thanks Google.
+        (╬▔皿▔)╯
+-->

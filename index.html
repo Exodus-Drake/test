@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<!--[ HEAD ]=========================================================================-->
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Re:Deviated Art</title>
+    <meta name="author" content="Edael">
+    <meta name="description" content="Reclaim, Rekinde, Reimagine.">
+    <meta name="keywords" content="art site, art">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.js"
+      integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+      crossorigin="anonymous">
+      </script>
+    <script>
+      $(function(){
+      $("#getnav").load("includes/widget_base.html");
+      });
+    </script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="assets/favicon/favicon.png">
+  </head>
+<!--[ HEADER ]=========================================================================-->
+
+  <header>
+  <!--  <div class="banner-top">--><!--Head of the page, fixed position-->
+
+    <!--</div>-->
+    <div class="flex-container-head"><!--Head of the page, fixed position-->
+
+
+
+    </div>
+  </header>
+<!--[ BODY ]=========================================================================-->
+  <body>
+
+    <div class="flex-container-body"><!--Containter of both the left and right flex columns-->
+        <!--Left Column-->
+        <div class="flex-left">
+
+          <div id="getnav">f</div>
+          {% include widget_featured.html %}
+          {% include widget_audio.html %}
+          {% include widget_base.html %}
+          {% include widget_base.html %}
+
+
+        </div>
+        <!--END-->
+
+        <!--right Column-->
+        <div class="flex-right">
+
+            {% include widget_friends.html %}
+            {% include widget_webcam.html %}
+
+        </div>
+        <!--END-->
+    </div>
+
+  </body>
+<!--[ FOOTER ]=========================================================================-->
+  <footer>
+    feet, hahahah
+  </footer>
+<!--=========================================================================-->
+</html>
