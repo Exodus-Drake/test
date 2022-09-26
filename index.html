@@ -12,7 +12,7 @@
       src="https://code.jquery.com/jquery-3.3.1.js"
       integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
       crossorigin="anonymous">
-      </script>
+    </script>
     <script>
       $(function(){
       $("#include-header").load("includes/profile_header.html");
@@ -24,7 +24,6 @@
       $("#include-poll").load("includes/widget_poll.html");
       });
     </script>
-    <link rel="stylesheet" href="https://unpkg.com/easy-embeddable-polls@latest/dist/easyEmbeddablePolls.css">
     <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/x-icon" href="assets/favicon/favicon.png">
   </head>
@@ -63,20 +62,11 @@
           <!--[ Includes ]-->
           <div id="include-friends"></div>
           <div id="include-webcam"></div>
-          <div id="include-poll"></div>
 
         </div>
         <!--END-->
     </div>
-    <script src="https://unpkg.com/vue@latest"></script>
-    <script src="https://unpkg.com/easy-embeddable-polls@latest"></script>
-    <script type="text/javascript">
-      Vue.component('poll', easyEmbeddablePolls.Poll);
-      Vue.component('renderless-poll', easyEmbeddablePolls.RenderlessPoll);
-      new Vue({
-        el: '#poll',
-      });
-    </script>
+
   </body>
 <!--[ FOOTER ]=========================================================================-->
   <footer>
