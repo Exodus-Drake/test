@@ -188,8 +188,10 @@ body{background-color: rgb(201, 214, 197);}
     text-align: center;
 }
 
-.widget-webcam > div{
+.widget-webcam > img{
     object-fit: contain;
+    width: 100%;
+    height: 100%;
 }
 
 .widget-audio{
