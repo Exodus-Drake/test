@@ -185,6 +185,8 @@ body{background-color: rgb(201, 214, 197);}
 }
 
 .widget-webcam{
+    max-width: 64px;
+    max-height: 64px;
     text-align: center;
 }
 
