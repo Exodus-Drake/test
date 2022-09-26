@@ -141,14 +141,16 @@ body{background-color: rgb(201, 214, 197);}
     text-align: center;
 }
 .title-font{
-    font-size: 19px;
+    position: relative;
+    bottom: 12px;
+    font-size: 15px;
     color: #498091;
     font-weight: bold;
 }
 .author-font{
     position: relative;
     bottom: 12px;
-    font-size: 15px;
+    font-size: 12px;
 }
 .row-featured{
     display: flex;
