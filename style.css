@@ -79,9 +79,9 @@ body{background-color: rgb(201, 214, 197);}
 }
 
 @media (max-width: 800px)/*WIP*/{
-  .flex-container-body{
-    flex-direction: column;
-  }
+  .flex-container-body{ flex-direction: column;}
+  .flex-left{ width: 100%;}
+  .flex-right{ width: 100%;}
 }
 /*==(Flexbox for widgets of body)=============================================*/
 /*Commons*/
