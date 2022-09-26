@@ -139,7 +139,16 @@ body{background-color: rgb(201, 214, 197);}
 .widget-featured{ /*Specific to the Featured widget*/
     font-family: "Trebuchet MS";
     text-align: center;
-    line-height: 0.8;
+}
+.title-font{
+    font-size: 19px;
+    color: #498091;
+    font-weight: bold;
+}
+.author-font{
+    position: relative;
+    bottom: 12px;
+    font-size: 15px;
 }
 .row-featured{
     display: flex;
