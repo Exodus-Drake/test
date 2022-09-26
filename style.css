@@ -189,8 +189,7 @@ body{background-color: rgb(201, 214, 197);}
 }
 
 .widget-webcam > div{
-    max-width: 128px;
-    max-height: 128px;
+    object-fit: contain;
 }
 
 .widget-audio{
